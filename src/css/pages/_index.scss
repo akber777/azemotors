@@ -1,0 +1,110 @@
+.information {
+    h4 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    &__table {
+        table {
+            margin-top: 25px;
+
+            td {
+                width: 50%;
+            }
+        }
+    }
+
+    &__search {
+        margin: 25px 0;
+        margin-bottom: 100px;
+
+        button {
+            background-color: #454d55;
+            color: #fff;
+        }
+
+        &--title {
+            h4 {
+                font-size: 35px;
+                font-weight: bold;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__serviceTitle {
+        padding: 25px 0;
+        border-top: 1px solid #454d55;
+        border-bottom: 1px solid #454d55;
+        margin: 25px 0;
+        h4 {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+
+    &__serviceTable {
+        thead {
+            background-color: #858585;
+        }
+
+        td {
+            width: calc(100% / 4);
+        }
+    }
+
+    &__allService {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        &--in {
+            display: flex;
+            padding: 12px;
+            background-color: #858585;
+            p {
+                color: #fff;
+                width: auto;
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 0;
+
+                &:first-child {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+    &__customer {
+        display: flex;
+        flex-wrap: wrap;
+        table {
+            width: 50%;
+
+            &:first-child {
+                td {
+                    border-right: 1px solid #454d55;
+                    input {
+                        width: 25px;
+                        height: 25px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .information__allService {
+            width: 50%;
+            height: 100px;
+
+            &--in {
+                flex-direction: column;
+            }
+        }
+    }
+}

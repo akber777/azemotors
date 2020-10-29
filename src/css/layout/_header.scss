@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    min-height: 100px;
+    padding: 35px 0;
+    flex-direction: column;
+
+    &__title {
+        text-align: center;
+        font-size: 100px;
+        color: #000;
+        font-weight: bold;
+        background: url("https://www.morristourism.org/wp-content/uploads/2019/06/Car-wash-red-mustang.png") center
+            no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 100px;
+    }
+
+    &__hideTitle {
+        text-align: center;
+        font-size: 100px;
+        color: #000;
+        font-weight: bold;
+        display: none;
+        margin-bottom: 100px;
+    }
+
+    &__flexBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+
+        h4 {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            color: #e30203;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-size: 18px;
+            &:hover {
+                color: #5c1a1ef6;
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &__invoice {
+        background-color: #454d55;
+
+        &--info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 50px;
+
+            p,
+            span,
+            a {
+                color: #fff;
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+}
